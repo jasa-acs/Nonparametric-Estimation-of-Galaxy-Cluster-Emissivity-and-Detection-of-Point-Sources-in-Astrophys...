@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ALIAS" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ALIAS" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="-f data/256/M256blockssymPS1B1W1S1Erealnk24forcepos2/result1.data -e data/256/E.data -o data/256/O.data -b data/blurring.data -r data/256/M256blockssymPS1B1W1S1Erealnk24forcepos2/solution1.data -s 256 -x 1" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="DebugOg">
+				<Option output="bin/DebugOg/ALIAS" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/DebugOg/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="-f data/256/M256blockssymPS1B1W1S1Erealnk24forcepos2/result1.data -e data/256/E.data -o data/256/O.data -b data/blurring.data -r data/256/M256blockssymPS1B1W1S1Erealnk24forcepos2/solution1.data -s 256 -x 1" />
+				<Compiler>
+					<Add option="-pg" />
+					<Add option="-Og" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg -lgmon" />
+				</Linker>
+			</Target>
+			<Target title="ReleaseO1">
+				<Option output="bin/ReleaseO1/ALIAS" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/ReleaseO1/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="-f data/256/M256blockssymPS1B1W1S1Erealnk24forcepos2/result1.data -e data/256/E.data -o data/256/O.data -b data/blurring.data -r data/256/M256blockssymPS1B1W1S1Erealnk24forcepos2/solution1.data -s 256 -x 1" />
+				<Compiler>
+					<Add option="-O1" />
+				</Compiler>
+			</Target>
+			<Target title="ReleaseO2">
+				<Option output="bin/ReleaseO2/ALIAS" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/ReleaseO2/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="-f data/256/M256blockssymPS1B1W1S1Erealnk24forcepos2/result1.data -e data/256/E.data -o data/256/O.data -b data/blurring.data -r data/256/M256blockssymPS1B1W1S1Erealnk24forcepos2/solution1.data -s 256 -x 1" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+			</Target>
+			<Target title="ReleaseO3">
+				<Option output="bin/ReleaseO3/ALIAS" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/ReleaseO3/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="-f data/256/M256blockssymPS1B1W1S1Erealnk24forcepos2/result1.data -e data/256/E.data -o data/256/O.data -b data/blurring.data -r data/256/M256blockssymPS1B1W1S1Erealnk24forcepos2/solution1.data -s 256 -x 1" />
+				<Compiler>
+					<Add option="-O3" />
+				</Compiler>
+			</Target>
+			<Target title="ReleaseO3Static">
+				<Option output="bin/ReleaseO3Static/ALIAS" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/ReleaseO3Static/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="-f data/256/M256blockssymPS1B1W1S1Erealnk24forcepos2/result1.data -e data/256/E.data -o data/256/O.data -b data/blurring.data -r data/256/M256blockssymPS1B1W1S1Erealnk24forcepos2/solution1.data -s 256 -x 1" />
+				<Compiler>
+					<Add option="-O3" />
+				</Compiler>
+				<Linker>
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wnon-virtual-dtor" />
+			<Add option="-Wshadow" />
+			<Add option="-Winit-self" />
+			<Add option="-Wredundant-decls" />
+			<Add option="-Wcast-align" />
+			<Add option="-Wundef" />
+			<Add option="-Wfloat-equal" />
+			<Add option="-Winline" />
+			<Add option="-Wunreachable-code" />
+			<Add option="-Wmissing-declarations" />
+			<Add option="-Wmissing-include-dirs" />
+			<Add option="-Wswitch-enum" />
+			<Add option="-Wswitch-default" />
+			<Add option="-Weffc++" />
+			<Add option="-Wzero-as-null-pointer-constant" />
+			<Add option="-Wmain" />
+			<Add option="-pedantic" />
+			<Add option="-Wextra" />
+			<Add option="-Wall" />
+			<Add option="-m64" />
+			<Add option="-fopenmp -std=c++17 -march=native -mno-sse5" />
+			<Add directory="include" />
+		</Compiler>
+		<Linker>
+			<Add option="-m64" />
+			<Add option="-fopenmp" />
+		</Linker>
+		<Unit filename=".gitignore" />
+		<Unit filename="Makefile" />
+		<Unit filename="include/WS/astroQUT.hpp" />
+		<Unit filename="include/const.hpp" />
+		<Unit filename="include/fista/poisson.hpp" />
+		<Unit filename="include/test.hpp" />
+		<Unit filename="include/test/WS.hpp" />
+		<Unit filename="include/test/fista.hpp" />
+		<Unit filename="include/test/matrix.hpp" />
+		<Unit filename="include/test/operator.hpp" />
+		<Unit filename="include/utils/linearop.hpp" />
+		<Unit filename="include/utils/linearop/matrix.hpp" />
+		<Unit filename="include/utils/linearop/operator.hpp" />
+		<Unit filename="include/utils/linearop/operator/abeltransform.hpp" />
+		<Unit filename="include/utils/linearop/operator/astrooperator.hpp" />
+		<Unit filename="include/utils/linearop/operator/blurring.hpp" />
+		<Unit filename="include/utils/linearop/operator/convolution.hpp" />
+		<Unit filename="include/utils/linearop/operator/fourier.hpp" />
+		<Unit filename="include/utils/linearop/operator/matmult.hpp" />
+		<Unit filename="include/utils/linearop/operator/matmult/spline.hpp" />
+		<Unit filename="include/utils/linearop/operator/wavelet.hpp" />
+		<Unit filename="src/WS/astroQUT.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/test.cpp" />
+		<Unit filename="src/test/WS.cpp" />
+		<Unit filename="src/test/fista.cpp" />
+		<Unit filename="src/test/matrix.cpp" />
+		<Unit filename="src/test/operator.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<DoxyBlocks>
+				<comment_style block="0" line="1" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings warn_if_undocumented="1" />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
